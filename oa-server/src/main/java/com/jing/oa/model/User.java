@@ -1,23 +1,50 @@
 package com.jing.oa.model;
 
-public class User {
-    private String userId;
+import java.io.Serializable;
 
-    private String userName;
+/**
+ * @author GuoJingyuan
+ * @date 2019/8/12
+ */
+public class User implements Serializable {
 
-    public String getUserId() {
-        return userId;
+    private String id;
+
+    private String name;
+
+    private String account;
+
+    private String password;
+
+    public String getId() {
+        return id;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId == null ? null : userId.trim();
+    public void setId(String id) {
+        this.id = id == null ? null : id.trim();
     }
 
-    public String getUserName() {
-        return userName;
+    public String getName() {
+        return name;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName == null ? null : userName.trim();
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
+    }
+
+    public String getAccount() {
+        return account;
+    }
+
+    public void setAccount(String account) {
+        this.account = account == null ? null : account.trim();
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password == null ? null : password.trim();
     }
 }
